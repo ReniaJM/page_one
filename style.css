@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("picture/green-leaves-plant-1072179.jpg");
+    background-attachment: fixed;
+
+}
+
+.container{
+    border: 4px solid #fff;
+    border-style: dashed;
+    width: 100%;
+    height: 104px;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: relative;
+    background:rgba(78, 187, 140, 0.2);
+}
+
+.logo{
+    border: 0;
+    position: absolute;
+    left: 20px;
+    /*animation-name: preloader_1;*/
+    /*animation-duration: 3s;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-timing-function: linear;*/
+}
+
+/*@keyframes preloader_1 {*/
+    /*100% {*/
+        /*transform: rotate(360deg);*/
+    /*}*/
+/*}*/
+
+
+.contact{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: green;
+    text-transform: lowercase;
+}
+
+a:hover{
+    color: #fff;
+}
+
+/*menu górne*/
+
+.menu_list li{
+    list-style-type: none;
+    display: inline;
+    float: left;
+
+}
+
+.menu_list li a{
+    background:rgba(78, 187, 140, 0.5);
+    color: #fff;
+    display:block;
+    height: 30px;
+    width: 90px;
+    padding: 5px;
+    text-transform: uppercase;
+
+
+}
+
+.menu_list li a:hover {
+    background:rgba(78, 187, 140, 0.3);
+}
+
+.menu{
+    position: absolute;
+    left: 200px;
+    bottom: 0px;
+}
+
+/*menu kolejne*/
+
+.second_menu {
+    background:rgba(90, 187, 140, 0.5);
+    width: 100%;
+    height: 30px;
+    /*position: absolute;*/
+    /*bottom: -50px;*/
+    /*left: 200px;*/
+
+}
+.second_menu .first_panel li {
+    list-style-type: none;
+    float: left;
+    padding: 5px;
+}
+
+.second_menu li a{
+    border-bottom: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.second_menu li .link2 {
+    display: block;
+    margin-top: 4px;
+
+}
+
+.second_menu .space{
+    display: inline-block;
+
+}
+
+.second_level{
+    display: block;
+
+}
+
+/*menu rozwijane*/
+
+
+.first_panel li .second_level{
+    display: none;
+}
+
+.first_panel li:hover .second_level{
+    display: block;
+    width: 65px;
+}
+
+.first_panel li .second_level li{
+    width: 60px;
+   padding-left: 1px;
+}
+
+.first_panel li {
+    position: relative;
+}
+
+.first_panel li .second_level{
+    position: absolute;
+    top: 1.9em;
+    left: 0em;
+}
+.first_panel > li{
+    height: 32px ;
+}
+
+.first_panel li .second_level{
+    background:rgba(90, 187, 140, 0.5);
+    border: 2px solid #fff;
+}
+
+.first_panel li .second_level li a{
+    display: block;
+    width: 60px;
+
+}
+.first_panel li .second_level li a:hover{
+    background:rgba(90, 187, 140, 0.7);
+    display: block;
+    color: #fff;
+    font-weight: bold;
+}
+
+.main_contener{
+    width: 100%;
+}
+
+/*Srodek strony*/
+.first_part{
+    width: 100%;
+    height: 30px;
+    background: rgba(246, 239, 248, 0.3);
+
+}
+
+.second_part{
+    background: rgba(246, 239, 248, 0.3);
+    width: 100%;
+    height: 20px;
+
+}
+
+.center_part{
+    background: rgba(246, 239, 248, 0.8);
+    width: 100%;
+    background-repeat: repeat-y;
+
+}
+
+
+.text{
+    text-align: justify;
+    padding: 30px 10px;
+    line-height: 140%;
+    font-size: 15px;
+
+}
+h1{
+    font-size: 18px;
+    text-align: center;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+h3{
+    margin: 15px;
+}
+
+.text ul {
+    margin: 20px;
+
+}
+
+.text li{
+    margin-bottom: 5px;
+}
+
+.main_contener .aside{
+    text-align: left;
+    float: right;
+    width: 150px;
+    margin: 10px 20px;
+    padding: 5px;
+    border: 3px dotted grey;
+    background: rgba(246, 239, 248, 0.5);
+}
+
+.main_contener .picture{
+    float: right;
+    clear: right;
+}
+
+.main_contener .picture img{
+    float: right;
+    clear: right;
+    margin-top: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+/*footer*/
+
+.footer{
+    background: rgba(246, 239, 248, 0.3);
+    width: 100%;
+    height: 100px;
+
+}
+
+.footer .icon{
+    float: left;
+    /*margin: 20px;*/
+}
+.newsletter_sign{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.newsletter_info{
+    padding: 5px;
+
+}
+
+.newsletter_form{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.input_text{
+    font-size: 15px;
+    background: black;
+    font-size: 12px;
+}
+.submit_button{
+    font-size: 12px;
+    cursor: pointer;
+    border: 2px outset grey;
+}
+
+
+.submit_button:active{
+    border: 2px inset grey;
+
+}
+
+.submit_button:hover{
+    color: darkslategrey;
+
+}
+
